@@ -172,10 +172,9 @@ def _impl(repository_ctx):
 
     repository_ctx.download_and_extract(
         url = [
-            "https://github.com/ARMmbed/mbed-os/archive/mbed-os-5.13.4.tar.gz",
+            "https://api.github.com/repos/ARMmbed/mbed-os/tarball/mbed-os-6.16.0",
         ],
-        sha256 = "5c291c1df779834224437043e2274bd1b54216b01e145c1754ac6cd8890cb12e",
-        stripPrefix = "mbed-os-mbed-os-5.13.4",
+        stripPrefix = "mbed-os-6.16.0",
     )
     patch(repository_ctx)
 
